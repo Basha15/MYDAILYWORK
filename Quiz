@@ -1,0 +1,16 @@
+import random
+print("\n-----Welcome to the MATH QUIZ-----")
+score = 0
+for i in range(1, 6):
+    num1 = random.randint(1, 10)
+    num2 = random.randint(1, 10)
+    answer = num1-num2
+    print("\nQuestion", i, ": What is", num1, "-", num2, "?")
+    user_ans = int(input("What is the Answerof num1 + num2: "))
+    if user_ans == answer:
+        print("It's True: ", answer)
+        score = score+1
+    else:
+        print("\n Wrong answer The answer is: ", answer)
+print("\n-----Game Over-----")
+print("\n Your Score is", score, "/ 5")
